@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Memories — Private Photo Library</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif;
+    background: #0A0A0F;
+    color: #E0E0E0;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 80px 24px; }
+  .hero { text-align: center; margin-bottom: 56px; }
+  .app-icon {
+    width: 96px; height: 96px;
+    border-radius: 22px;
+    background: linear-gradient(135deg, #B86E78, #D9A672);
+    display: inline-flex; align-items: center; justify-content: center;
+    font-size: 44px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 32px rgba(184,110,120,0.3);
+  }
+  .hero h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #B86E78, #D9A672);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 8px;
+  }
+  .hero .tagline {
+    font-size: 1.1rem;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 24px;
+  }
+  .download-btn {
+    display: inline-block;
+    padding: 14px 32px;
+    background: linear-gradient(135deg, #B86E78, #D9A672);
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .download-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(184,110,120,0.4); }
+  h2 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #D9A672;
+    margin-top: 48px;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(184,110,120,0.15);
+  }
+  p { margin-bottom: 14px; color: #C0C0C0; }
+  .features { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 16px; }
+  .feature {
+    padding: 20px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(184,110,120,0.1);
+    border-radius: 12px;
+  }
+  .feature .icon { font-size: 24px; margin-bottom: 8px; }
+  .feature h3 { font-size: 0.95rem; font-weight: 600; color: #fff; margin-bottom: 4px; }
+  .feature p { font-size: 0.85rem; color: rgba(255,255,255,0.5); margin-bottom: 0; }
+  .links {
+    display: flex; gap: 24px; justify-content: center;
+    margin-top: 48px; padding-top: 32px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+  .links a {
+    color: #B86E78;
+    text-decoration: none;
+    font-size: 0.9rem;
+    border-bottom: 1px solid rgba(184,110,120,0.3);
+    transition: border-color 0.2s;
+  }
+  .links a:hover { border-color: #B86E78; }
+  .back {
+    display: inline-block;
+    margin-bottom: 32px;
+    color: rgba(255,255,255,0.35);
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: color 0.2s;
+  }
+  .back:hover { color: rgba(255,255,255,0.6); }
+  @media (max-width: 600px) {
+    .container { padding: 48px 16px; }
+    .hero h1 { font-size: 1.7rem; }
+    .features { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <a href="/" class="back">&larr; Anurag Tiwari</a>
+
+  <div class="hero">
+    <div class="app-icon">&#128247;</div>
+    <h1>Memories</h1>
+    <p class="tagline">Your private photo library. Encrypted. Offline-first. No servers.</p>
+    <!-- Update href when App Store link is available -->
+    <a href="#" class="download-btn">Download on the App Store</a>
+  </div>
+
+  <h2>Features</h2>
+  <div class="features">
+    <div class="feature">
+      <div class="icon">&#128274;</div>
+      <h3>AES-256 Encryption</h3>
+      <p>Photos encrypted at rest with keys stored in your iCloud Keychain.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">&#9729;&#65039;</div>
+      <h3>iCloud Sync</h3>
+      <p>Sync your Mac Photos library to iPhone via CloudKit. Your data, your cloud.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">&#128065;</div>
+      <h3>Decoy Mode</h3>
+      <p>Enter a different PIN to show a fake gallery. Intruder selfie capture included.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">&#128241;</div>
+      <h3>Offline-First</h3>
+      <p>Everything works without internet. No accounts, no sign-ups, no tracking.</p>
+    </div>
+  </div>
+
+  <h2>About</h2>
+  <p>Memories syncs your Mac photo library to your iPhone privately. The Mac companion app reads your Photos library and uploads encrypted records to your personal iCloud container. The iPhone app downloads and organizes them with full privacy features.</p>
+  <p>Zero third-party SDKs. Zero analytics. Your photos stay yours.</p>
+
+  <div class="links">
+    <a href="/memories/privacy.html">Privacy Policy</a>
+    <a href="/memories/support.html">Support</a>
+    <a href="mailto:anuragtiwari.developer@gmail.com">Contact</a>
+  </div>
+
+</div>
+</body>
+</html>

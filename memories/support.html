@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support — Memories</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
+    background: #0A0A0F;
+    color: #E0E0E0;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 48px 24px 80px; }
+  .back {
+    display: inline-block;
+    margin-bottom: 32px;
+    color: rgba(255,255,255,0.35);
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: color 0.2s;
+  }
+  .back:hover { color: rgba(255,255,255,0.6); }
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #B86E78, #D9A672);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 8px;
+  }
+  .subtitle { color: rgba(255,255,255,0.4); margin-bottom: 40px; }
+  h2 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #D9A672;
+    margin-top: 36px;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(184,110,120,0.15);
+  }
+  p { margin-bottom: 14px; color: #C0C0C0; }
+  strong { color: #E8E8E8; font-weight: 600; }
+  a { color: #B86E78; text-decoration: none; border-bottom: 1px solid rgba(184,110,120,0.3); transition: border-color 0.2s; }
+  a:hover { border-color: #B86E78; }
+  .contact-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(184,110,120,0.12);
+    border-radius: 12px;
+    padding: 24px;
+    margin-top: 16px;
+    text-align: center;
+  }
+  .contact-card p { margin-bottom: 4px; }
+  .contact-card .btn {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 12px 28px;
+    background: linear-gradient(135deg, #B86E78, #D9A672);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 10px;
+    border-bottom: none;
+    transition: transform 0.2s;
+  }
+  .contact-card .btn:hover { transform: translateY(-1px); }
+  .faq { margin-top: 16px; }
+  .faq-item {
+    padding: 16px 20px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  .faq-item h3 { font-size: 0.95rem; font-weight: 600; color: #fff; margin-bottom: 6px; }
+  .faq-item p { font-size: 0.9rem; margin-bottom: 0; }
+  @media (max-width: 600px) {
+    .container { padding: 32px 16px 60px; }
+    h1 { font-size: 1.6rem; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<a href="/memories/" class="back">&larr; Memories</a>
+
+<h1>Support</h1>
+<p class="subtitle">We're here to help with any issues.</p>
+
+<h2>Contact</h2>
+<div class="contact-card">
+  <p><strong>Anurag Tiwari</strong></p>
+  <p>For bugs, feature requests, or any questions:</p>
+  <a href="mailto:anuragtiwari.developer@gmail.com?subject=Memories%20Support" class="btn">Email Support</a>
+</div>
+
+<h2>Frequently Asked Questions</h2>
+<div class="faq">
+  <div class="faq-item">
+    <h3>How do I sync photos from my Mac?</h3>
+    <p>Install the MacUploader companion app on your Mac. Both devices must be signed into the same iCloud account. Open MacUploader, grant Photos access, and tap Upload. Photos will appear on your iPhone automatically.</p>
+  </div>
+  <div class="faq-item">
+    <h3>Are my photos encrypted?</h3>
+    <p>Yes. When encryption is enabled (Settings > Security), photos are encrypted with AES-256-GCM. Encryption keys are stored in your iCloud Keychain and never leave your devices.</p>
+  </div>
+  <div class="faq-item">
+    <h3>What is Decoy Mode?</h3>
+    <p>Decoy Mode shows a fake photo gallery when a different PIN is entered. If someone tries the wrong PIN, the app can capture an intruder selfie. Enable it in Settings > Privacy.</p>
+  </div>
+  <div class="faq-item">
+    <h3>How do I back up my library?</h3>
+    <p>Go to Settings > iCloud Backup and tap "Back Up Now". Your encrypted backup is stored in your personal iCloud container. You can also enable automatic backups on a daily or weekly schedule.</p>
+  </div>
+  <div class="faq-item">
+    <h3>How do I delete all my data?</h3>
+    <p>Delete the app to remove all local data. For iCloud data, go to iOS Settings > [Your Name] > iCloud > Manage Storage > Memories and delete it.</p>
+  </div>
+  <div class="faq-item">
+    <h3>How do I share a diagnostic report?</h3>
+    <p>Go to Settings > About > Share Diagnostics. The report contains only app logs and device info — no photos or personal data. If the app crashes, you'll be prompted on next launch to share a report.</p>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

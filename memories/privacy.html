@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Memories</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
+    background: #0A0A0F;
+    color: #E0E0E0;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 48px 24px 80px; }
+  .back {
+    display: inline-block;
+    margin-bottom: 32px;
+    color: rgba(255,255,255,0.35);
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: color 0.2s;
+  }
+  .back:hover { color: rgba(255,255,255,0.6); }
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #B86E78, #D9A672);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 4px;
+  }
+  .meta {
+    color: rgba(255,255,255,0.35);
+    font-size: 0.85rem;
+    margin-bottom: 32px;
+  }
+  h2 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #D9A672;
+    margin-top: 40px;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(184,110,120,0.15);
+  }
+  p { margin-bottom: 14px; color: #C0C0C0; }
+  .callout {
+    background: rgba(184,110,120,0.08);
+    border-left: 3px solid #B86E78;
+    padding: 16px 20px;
+    border-radius: 0 8px 8px 0;
+    margin: 20px 0;
+    color: #D0D0D0;
+    font-weight: 500;
+  }
+  ul { list-style: none; padding-left: 0; margin-bottom: 14px; }
+  ul li { padding: 4px 0 4px 20px; position: relative; color: #C0C0C0; }
+  ul li::before {
+    content: '';
+    position: absolute; left: 0; top: 12px;
+    width: 6px; height: 6px; border-radius: 50%;
+    background: #B86E78;
+  }
+  strong { color: #E8E8E8; font-weight: 600; }
+  a { color: #B86E78; text-decoration: none; border-bottom: 1px solid rgba(184,110,120,0.3); transition: border-color 0.2s; }
+  a:hover { border-color: #B86E78; }
+  .contact-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(184,110,120,0.12);
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 12px;
+  }
+  .contact-card p { margin-bottom: 4px; }
+  @media (max-width: 600px) {
+    .container { padding: 32px 16px 60px; }
+    h1 { font-size: 1.6rem; }
+    h2 { font-size: 1.05rem; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<a href="/memories/" class="back">&larr; Memories</a>
+
+<h1>Privacy Policy</h1>
+<p class="meta">Memories App &middot; Last Updated: April 15, 2026</p>
+
+<p>Anurag Tiwari (&ldquo;we&rdquo;, &ldquo;us&rdquo;, or &ldquo;our&rdquo;) built the Memories app. This Privacy Policy explains how we handle information when you use our app.</p>
+
+<h2>The Short Version</h2>
+<div class="callout">
+Memories is 100% offline-first. Your photos never leave your device unless you choose to back them up to your own iCloud account. We have no servers, no accounts, no sign-ups, and no way to see your data. Everything stays yours.
+</div>
+
+<h2>Information We Do Not Collect</h2>
+<p>Memories is designed with privacy as a core principle. We do <strong>not</strong>:</p>
+<ul>
+  <li>Collect, transmit, or sell your personal data to third parties</li>
+  <li>Use any analytics, tracking, or advertising SDKs</li>
+  <li>Access your photos without your explicit action (you choose what to import)</li>
+  <li>Store any data on our servers</li>
+  <li>Automatically send any diagnostic or crash data</li>
+</ul>
+
+<h2>Information Stored on Your Device</h2>
+<p>When you use Memories, the following data is stored <strong>locally on your device only</strong>:</p>
+<ul>
+  <li><strong>Photos and videos</strong> you choose to import from your Photos library or Files app</li>
+  <li><strong>Photo metadata</strong> (date, location, dimensions) associated with imported media</li>
+  <li><strong>App preferences</strong> (display settings, backup preferences, subscription state)</li>
+  <li><strong>Security credentials</strong> (PBKDF2-hashed passcode with random salt, Face ID enrollment status) stored in the iOS Keychain</li>
+  <li><strong>Diagnostic logs</strong> (crash info, error events) stored locally for troubleshooting &mdash; never sent unless you choose to</li>
+</ul>
+
+<h2>iCloud</h2>
+<p>If you enable iCloud backup, your photos are encrypted with <strong>AES-256-GCM</strong> encryption before being stored in your private iCloud container. This data is:</p>
+<ul>
+  <li>Stored in <strong>your personal iCloud account</strong>, not on any server we operate</li>
+  <li>Encrypted end-to-end using keys stored in your iCloud Keychain</li>
+  <li>Accessible only by devices signed into your Apple ID</li>
+  <li>Manageable via iOS Settings &gt; [Your Name] &gt; iCloud &gt; Manage Storage</li>
+</ul>
+<p>We do not have access to your iCloud data.</p>
+
+<h2>Optional Diagnostic Reports</h2>
+<p>Memories stores crash logs and error events locally on your device. This data is <strong>never sent automatically</strong>. If you choose to share a diagnostic report (via Settings &gt; About &gt; Share Diagnostics, or when prompted after a crash):</p>
+<ul>
+  <li>The report contains: app version, iOS version, device model, crash logs, and error events</li>
+  <li>It does <strong>not</strong> contain: photos, filenames, location data, personal information, or any identifiable content</li>
+  <li>The report is uploaded to our CloudKit container solely for the purpose of improving app stability</li>
+  <li>We do not use this data for advertising, tracking, or profiling</li>
+  <li>You are in full control &mdash; diagnostics are only shared when you explicitly tap &ldquo;Share&rdquo;</li>
+</ul>
+
+<h2>Face ID and Passcode</h2>
+<p>Memories uses Face ID (or device passcode) solely to authenticate you when unlocking the app or your Private Collection. Biometric data is processed entirely by iOS on the device&rsquo;s Secure Enclave. We never receive, store, or transmit biometric data.</p>
+
+<h2>Subscriptions</h2>
+<p>Subscriptions are handled entirely by Apple through the App Store. We do not process payments or have access to your payment information. Subscription status is verified on-device using Apple&rsquo;s StoreKit framework.</p>
+
+<h2>Photo Metadata</h2>
+<p>GPS coordinates and other EXIF metadata embedded in your photos remain with the photos on your device. This metadata is never extracted, collected, or transmitted to us or any third party.</p>
+
+<h2>Third-Party Services</h2>
+<p>Memories uses <strong>zero</strong> third-party SDKs or services. The only external service involved is Apple&rsquo;s iCloud (CloudKit), governed by <a href="https://www.apple.com/legal/privacy/">Apple&rsquo;s Privacy Policy</a>.</p>
+
+<h2>Data Deletion</h2>
+<p>All your data is stored locally on your device and in your personal iCloud container. To delete your data:</p>
+<ul>
+  <li><strong>Local data</strong>: Delete the app from your device. All local photos, metadata, and preferences are removed.</li>
+  <li><strong>iCloud data</strong>: Go to iOS Settings &gt; [Your Name] &gt; iCloud &gt; Manage Storage &gt; Memories, and delete the data.</li>
+</ul>
+
+<h2>Children&rsquo;s Privacy</h2>
+<p>Memories does not knowingly collect information from children under 13. The app does not contain user-generated content, social features, or any data collection mechanisms.</p>
+
+<h2>Changes to This Policy</h2>
+<p>We may update this Privacy Policy from time to time. Any changes will be reflected in the &ldquo;Last Updated&rdquo; date above. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+
+<h2>Contact</h2>
+<div class="contact-card">
+  <p><strong>Anurag Tiwari</strong></p>
+  <p>Email: <a href="mailto:anuragtiwari.developer@gmail.com">anuragtiwari.developer@gmail.com</a></p>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anurag Tiwari — App Developer</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif;
+    background: #0A0A0F;
+    color: #E0E0E0;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 80px 24px; }
+  .hero { text-align: center; margin-bottom: 64px; }
+  .hero h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #B86E78, #D9A672);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 12px;
+  }
+  .hero p {
+    font-size: 1.1rem;
+    color: rgba(255,255,255,0.5);
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgba(255,255,255,0.35);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 20px;
+  }
+  .apps { display: flex; flex-direction: column; gap: 16px; margin-bottom: 64px; }
+  .app-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(184,110,120,0.12);
+    border-radius: 16px;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+  .app-card:hover { border-color: rgba(184,110,120,0.35); transform: translateY(-2px); }
+  .app-icon {
+    width: 64px; height: 64px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #B86E78, #D9A672);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 28px;
+    flex-shrink: 0;
+  }
+  .app-info h3 { font-size: 1.1rem; font-weight: 600; color: #fff; margin-bottom: 4px; }
+  .app-info p { font-size: 0.85rem; color: rgba(255,255,255,0.5); }
+  .app-links { display: flex; gap: 16px; margin-top: 8px; }
+  .app-links a {
+    font-size: 0.8rem;
+    color: #B86E78;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(184,110,120,0.3);
+    transition: border-color 0.2s;
+  }
+  .app-links a:hover { border-color: #B86E78; }
+  .contact { text-align: center; padding-top: 40px; border-top: 1px solid rgba(255,255,255,0.06); }
+  .contact p { color: rgba(255,255,255,0.4); font-size: 0.9rem; }
+  .contact a { color: #B86E78; text-decoration: none; }
+  @media (max-width: 600px) {
+    .container { padding: 48px 16px; }
+    .hero h1 { font-size: 1.8rem; }
+    .app-card { flex-direction: column; text-align: center; }
+    .app-links { justify-content: center; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="hero">
+    <h1>Anurag Tiwari</h1>
+    <p>Building privacy-first apps for Apple platforms.</p>
+  </div>
+
+  <h2>Apps</h2>
+  <div class="apps">
+    <a href="/memories/" class="app-card">
+      <div class="app-icon">&#128247;</div>
+      <div class="app-info">
+        <h3>Memories</h3>
+        <p>A private photo library that syncs your Mac photos to iPhone via iCloud. Encrypted, offline-first, no servers.</p>
+        <div class="app-links">
+          <span>App Store</span>
+          <span>Privacy</span>
+          <span>Support</span>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="contact">
+    <p>Get in touch: <a href="mailto:anuragtiwari.developer@gmail.com">anuragtiwari.developer@gmail.com</a></p>
+  </div>
+
+</div>
+</body>
+</html>
