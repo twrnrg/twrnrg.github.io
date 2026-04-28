@@ -48,11 +48,12 @@
     background: rgba(255,255,255,0.04);
     border: 1px solid rgba(184,110,120,0.12);
     border-radius: 16px;
-    text-decoration: none;
-    color: inherit;
     transition: border-color 0.2s, transform 0.2s;
   }
   .app-card:hover { border-color: rgba(184,110,120,0.35); transform: translateY(-2px); }
+  .app-info { flex: 1; min-width: 0; }
+  .app-info h3 a { color: inherit; text-decoration: none; }
+  .app-info h3 a:hover { color: #D9A672; }
   .app-icon {
     width: 64px; height: 64px;
     border-radius: 14px;
@@ -62,7 +63,7 @@
     flex-shrink: 0;
   }
   .app-info h3 { font-size: 1.1rem; font-weight: 600; color: #fff; margin-bottom: 4px; }
-  .app-info p { font-size: 0.85rem; color: rgba(255,255,255,0.5); }
+  .app-info p { font-size: 0.85rem; color: rgba(255,255,255,0.5); margin-bottom: 12px; }
   .app-links { display: flex; gap: 16px; margin-top: 8px; }
   .app-links a {
     font-size: 0.8rem;
@@ -93,19 +94,19 @@
 
   <h2>Apps</h2>
   <div class="apps">
-    <a href="/memories/" class="app-card">
+    <div class="app-card">
       <div class="app-icon">&#128247;</div>
       <div class="app-info">
-        <h3>Memories</h3>
+        <h3><a href="/memories/">Memories</a></h3>
         <p>A private photo library that syncs your Mac photos to iPhone via iCloud. Encrypted, offline-first, no servers.</p>
         <div class="app-links">
-          <a href="https://apps.apple.com/us/app/memories-secret-photo-vault/id6761730530" onclick="event.stopPropagation()">App Store</a>
-          <a href="/memories/privacy.html" onclick="event.stopPropagation()">Privacy</a>
-          <a href="/memories/terms.html" onclick="event.stopPropagation()">Terms of Use</a>
-          <a href="/memories/support.html" onclick="event.stopPropagation()">Support</a>
+          <a href="https://apps.apple.com/us/app/memories-secret-photo-vault/id6761730530">App Store</a>
+          <a href="/memories/privacy.html">Privacy</a>
+          <a href="/memories/terms.html">Terms of Use</a>
+          <a href="/memories/support.html">Support</a>
         </div>
       </div>
-    </a>
+    </div>
   </div>
 
   <div class="contact">
